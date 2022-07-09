@@ -1,0 +1,43 @@
+# A sample pipeline to run Test Complete in different scenarios
+# [+] Run Test Complete using Test Plan to synchronize with ADO
+# [+] Run Test Complete by Tag
+
+trigger:
+  - none
+
+stages:
+  - stage: automation_test
+    displayName: Automation Test
+    jobs:
+      - job: auto_test_job
+        displayName: Automation Test Job
+        pool:
+          name: HFI-Azure-Windows
+          demands:
+            - Agent.Name -equals hfi-win-uswest-1
+        steps:
+          - checkout: git://HFI-Platform/HFI-AutomationTest@features/US253563_Automation_Test_Demo
+
+          - task: VisualStudioTestPlatformInstaller@1
+            inputs:
+              packageFeedSelector: "nugetOrg"
+              versionSelector: "latestPreRelease"
+
+          - task: InstallTestCompleteAdapter@1
+            inputs:
+              preferredExecutor: 'TC'
+              installExecutor: true
+              updateExecutor: false
+              searchMode: 'ProjectItems'
+              logsLevel: '0'
+
+        # Run Test Complete by a tag (@9375_DID_1528)
+          - task: VSTest@2
+            inputs:
+              testSelector: 'testAssemblies'
+              testAssemblyVer2: 'Hfi.Smm.Backend.Automation.Test.pjs'
+              searchFolder: '$(System.DefaultWorkingDirectory)\Source\Hfi.Smm.Backend.Automation.Test'
+              testFiltercriteria: '@Consumable=true'
+              runOnlyImpactedTests: false
+              vsTestVersion: 'toolsInstaller'
+              pathtoCustomTestAdapters: '$(System.DefaultWorkingDirectory)\TestCompleteAdapter'

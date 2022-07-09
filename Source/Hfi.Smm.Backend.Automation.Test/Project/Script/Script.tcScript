@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<folder name="Utils">
+			<child name="Util_Assertion" key="{231D3528-7849-4CB9-B44C-ED4B906B9C58}" path="Utils\Util_Assertion.js" />
+			<child name="Util_DatabaseHelper" key="{85B32AFF-35D8-4522-940A-C287F45FD059}" path="Utils\Util_DatabaseHelper.js" />
+			<child name="Util_Helper" key="{71DA897C-5102-4672-8F4E-72A7A3B222A8}" path="Utils\Util_Helper.js" />
+			<child name="Util_HttpRequest" key="{700ED4FC-5BBB-4C85-AB21-BA96EAC5FD21}" path="Utils\Util_HttpRequest.js" />
+			<child name="Util_GLOBAL" key="{26EDCCDB-89EC-4E3C-8D9B-2213F7F18D29}" path="Utils\Util_GLOBAL.js" />
+			<child name="Util_Utility" key="{39CDC8C5-5B3B-4422-959A-5E25EBBF7CA1}" path="Utils\Util_Utility.js" />
+		</folder>
+		<folder name="Hfi.Smm.Backend.Consumable.Service">
+			<folder name="Feature_9375_DID_1528">
+				<child name="F_1528_US_199146_test" key="{B91DFC14-C394-4293-968F-2E051B436209}" path="Hfi.Smm.Backend.Consumable.Service\Feature_9375_DID_1528\F_1528_US_199146_test.js" />
+				<child name="F_1528_US_200496_test" key="{007227AC-9F60-41CE-AD18-4EC56866829F}" path="Hfi.Smm.Backend.Consumable.Service\Feature_9375_DID_1528\F_1528_US_200496_test.js" />
+				<child name="F_1528_US_230229_test" key="{E2262B45-78E1-45AF-9BDF-6BA38775F40B}" path="Hfi.Smm.Backend.Consumable.Service\Feature_9375_DID_1528\F_1528_US_230229_test.js" />
+			</folder>
+			<folder name="Feature_9375_DID_1615">
+				<child name="F_1615_US_203695_test" key="{AECAA425-0C6B-495A-9E7C-6F01EEBC358A}" path="Hfi.Smm.Backend.Consumable.Service\Feature_9375_DID_1615\F_1615_US_203695_test.js" />
+			</folder>
+			<folder name="Feature_9375_DID_1617">
+				<child name="F_1617_US_217824_test" key="{8D165D56-92AC-4BE4-8386-5CE54B3E6E32}" path="Hfi.Smm.Backend.Consumable.Service\Feature_9375_DID_1617\F_1617_US_217824_test.js" />
+			</folder>
+		</folder>
+	</children>
+</Root>

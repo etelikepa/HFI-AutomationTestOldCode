@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="15.0" key="{05F02DB4-94AC-47A8-B156-7508FB776FBA}">
+	<children>
+		<child name="Hfi.Smm.Backend.Automation.Test" key="{1D30FC8C-763A-475B-97D0-0101142A12B3}" path="Project\Hfi.Smm.Backend.Automation.Test.mds" />
+	</children>
+	<testItems key="{F2D2D299-C6C5-4389-842B-56A52A3B1D9D}">
+		<children>
+			<testItem key="{1D30FC8C-763A-475B-97D0-0101142A12B3}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{A3E64BA7-60A2-4696-8A8A-1844EAB49B40}" />
+	<analysis key="{17CCDFC0-8F2F-47A4-A3E9-F7764D256981}" />
+	<scc key="{C900492B-D218-429C-9AA0-264B7D78CA88}" name="Git Plugin">
+		<data />
+	</scc>
+</Root>

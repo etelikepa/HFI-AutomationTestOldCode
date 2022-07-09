@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scenarios>
+	<Folder Name="Hfi.Smm.Backend.Consumable.Service">
+		<Folder Name="Feature_9375_DID_1528">
+			<Feature Path="Hfi.Smm.Backend.Consumable.Service\Feature_9375_DID_1528\US_199146.feature" />
+			<Feature Path="Hfi.Smm.Backend.Consumable.Service\Feature_9375_DID_1528\US_200496.feature" />
+			<Feature Path="Hfi.Smm.Backend.Consumable.Service\Feature_9375_DID_1528\US_230229.feature" />
+		</Folder>
+		<Folder Name="Feature_9375_DID_1615">
+			<Feature Path="Hfi.Smm.Backend.Consumable.Service\Feature_9375_DID_1615\US_203695.feature" />
+		</Folder>
+		<Folder Name="Feature_9375_DID_1617">
+			<Feature Path="Hfi.Smm.Backend.Consumable.Service\Feature_9375_DID_1617\US_217824.feature" />
+		</Folder>
+	</Folder>
+</Scenarios>

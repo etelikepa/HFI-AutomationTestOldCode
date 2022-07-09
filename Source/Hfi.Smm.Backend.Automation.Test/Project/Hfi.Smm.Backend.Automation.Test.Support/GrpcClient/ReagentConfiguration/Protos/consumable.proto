@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package beckmancoulter.dxh.hfi.smm.protos.v1;
+
+option csharp_namespace = "BeckmanCoulter.DxH.Hfi.Smm.Protos.V1";
+  
+// SMM Consumable service. This service provides funcionality needed by other microservices inside SMM Back-end.
+service Consumable {
+  // Get reagent status
+  rpc GetReagentStatus(GetReagentStatusRequest) returns (GetReagentStatusResponse);
+}
+    
+// Represents the Reagent Status request
+message GetReagentStatusRequest {
+  string instrument_id  = 1; // Instrument ID. The ID of the instrument. That is designed for the future.
+}
+    
+// Represents the Reagent Status response    
+message GetReagentStatusResponse {
+  string status_code                        = 1; // Status code when checking reagent status (OK/NOK)
+  repeated ReagentType unattended_reagents  = 2; // List of unattended_reagents (not installed yet)
+  repeated ReagentType empty_reagents       = 3; // List of empty reagents
+}
+
+// Represents the Reagent type 
+message ReagentType {
+  string id =             1; // ID of reagent
+  string key =            2; // Key of reagent
+  string product_name   = 3; // Reagent product name
+  string name =           4; // Reagent name
+}
